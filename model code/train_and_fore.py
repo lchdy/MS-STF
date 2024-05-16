@@ -111,6 +111,7 @@ class GenerateDataset(pl.LightningDataModule):
         return torch.utils.data.DataLoader(train_dataset, batch_size=self.batch_size)
 
 def main():
+    # use the best parameter combination
     embed_size = 1
     num_node = 1
     num_heads = 1
